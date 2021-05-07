@@ -7,6 +7,7 @@ class Snake {
   currentDirection: number = 1; //{NORTH,EAST,SOUTH,WEST}
   size: number;
 isCurrentlyActive: string;
+static move: any;
 
   constructor(startPosition: Point, size: number) {
     this.currentParts.push(startPosition);
@@ -57,7 +58,7 @@ isCurrentlyActive: string;
     if (this.currentDirection == 5) this.currentDirection = 1;
   }
   public update(steps:number){
-    snake.move(steps);
+    Snake.move(steps);
   }
   die(){
     this.isCurrentlyActive == "false";

@@ -26,6 +26,8 @@ class WorldModel {
     for (let snake of this.snakes) snake.move(steps);
 
     for (let view of this.views) view.display(this);
+
+    Math.floor(n*Math.random())
   }
 
   public get worldHeight() {
@@ -33,6 +35,10 @@ class WorldModel {
   }
   public get worldWidth() {
     return this.width;
+  }
+  reset() {
+    let view = [];
+    let actor = [];
   }
 }
 

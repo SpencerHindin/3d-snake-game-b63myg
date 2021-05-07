@@ -1,7 +1,6 @@
 
 interface Actor {
-  display() : void;
-  public update () {
+  update() : void
 
   }
 }

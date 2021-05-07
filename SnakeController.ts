@@ -4,11 +4,16 @@ import Snake from "./Snake";
 class SnakeController {
   snakeWorld: WorldModel;
   slitherer: Snake;
+isCurrentlyActive: boolean;
 
   public constructor(world: WorldModel, snake: Snake) {
     this.snakeWorld = world;
     this.slitherer = snake;
   }
+
+get isSnakeActive() {
+  return this.isCurrentlyActive == true;
+}
 
   public turnSnakeLeft() {
     this.slitherer.turnLeft();

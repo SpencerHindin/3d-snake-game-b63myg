@@ -1,8 +1,8 @@
 import WorldModel from "./WorldModel";
 
-class GameController() {
+class GameController {
   world: WorldModel;
-  constructor() {
+  constructor(g: game) {
   this.world = WorldModel;
   }
   player1(){
@@ -23,6 +23,9 @@ class GameController() {
   updateFrame(requestAnimationFrame: GameController){
     
   }
+  init(data) {
+    data.numOfHumanPlayers + data.numOfAIPlayers
+  }
 }
 
-export default HumanPlayer;
+export default GameController;
